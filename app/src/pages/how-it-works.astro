@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+    <!-- Header -->
+    <section class="text-center py-20 bg-white shadow">
+        <h1 class="text-4xl font-bold mb-4">How It Works</h1>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Understand the basics of the Joomla REST API and how to start using it
+            in your project.
+        </p>
+    </section>
+
+    <!-- Content Section -->
+    <section class="max-w-4xl mx-auto py-16 px-4 space-y-12">
+        <!-- Joomla Version -->
+        <div>
+            <h2 class="text-2xl font-semibold mb-2">
+                ✅ Supported Joomla Versions
+            </h2>
+            <p class="text-gray-700">
+                Our API is fully compatible with <strong>Joomla 4.x and 5.x</strong>.
+                Make sure your Joomla installation is up to date for full feature
+                support.
+            </p>
+        </div>
+
+        <!-- Paid Version Coverage -->
+        <div>
+            <h2 class="text-2xl font-semibold mb-2">
+                💼 What’s Included in the Paid Version
+            </h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>Custom route creation</li>
+                <li>JWT and OAuth2 authentication support</li>
+                <li>Advanced query capabilities</li>
+                <li>Email and priority support</li>
+                <li>Extended rate limits</li>
+                <li>Commercial-use license</li>
+            </ul>
+        </div>
+
+        <!-- Community Version Info -->
+        <div>
+            <h2 class="text-2xl font-semibold mb-2">
+                🌐 Where to Find the Community Version
+            </h2>
+            <p class="text-gray-700">
+                The free and open-source Community Tier is available on our
+                <a href="#" class="text-blue-600 underline hover:text-blue-800"
+                >GitHub repository</a
+                >. It includes essential features and is ideal for testing, learning,
+                or personal projects.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 text-center bg-white">
+        <h2 class="text-2xl font-bold mb-4">Ready to Get Started?</h2>
+        <a
+                href="checkout.html"
+                class="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+        >
+            Try It Free
+        </a>
+    </section>
+</Layout>

@@ -1,5 +1,4 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -7,5 +6,109 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<Welcome />
+	<!-- Hero Section -->
+	<section class="text-center py-20 bg-white shadow-md">
+		<h1 class="text-4xl font-bold mb-4">Joomla REST API</h1>
+		<p class="text-lg text-gray-600 mb-6">
+			Power Joomla as a Headless CMS with our flexible REST API
+		</p>
+		<a
+			href="how-it-works.html"
+			class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+		>
+			Get Started Free
+		</a>
+	</section>
+
+	<!-- Overview -->
+	<section class="max-w-5xl mx-auto py-16 px-4">
+		<h2 class="text-2xl font-semibold mb-4">Why Joomla REST API?</h2>
+		<p class="text-gray-700 text-lg mb-6">
+			Use Joomla as a powerful, secure backend for your modern frontend stack.
+			Whether you’re building SPAs, mobile apps, or JAMstack sites, our API
+			gives you full content control.
+		</p>
+	</section>
+
+	<!-- Features -->
+	<section class="bg-white py-16 px-4">
+		<div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+			<div>
+				<h3 class="text-xl font-bold mb-2">Full CRUD API</h3>
+				<p class="text-gray-600">
+					Access, create, update, and delete Joomla content programmatically.
+				</p>
+			</div>
+			<div>
+				<h3 class="text-xl font-bold mb-2">JWT Authentication</h3>
+				<p class="text-gray-600">
+					Secure endpoints using industry-standard token-based authentication.
+				</p>
+			</div>
+			<div>
+				<h3 class="text-xl font-bold mb-2">Frontend Agnostic</h3>
+				<p class="text-gray-600">
+					Integrates with React, Vue, Angular, or any frontend framework.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Pricing -->
+	<section id="pricing" class="py-20 bg-gray-100">
+		<div class="max-w-5xl mx-auto text-center">
+			<h2 class="text-3xl font-bold mb-10">Pricing</h2>
+			<div class="grid md:grid-cols-2 gap-8">
+				<!-- Community Tier -->
+				<div class="bg-white p-8 rounded-lg shadow">
+					<h3 class="text-xl font-semibold mb-2">Community Tier</h3>
+					<p class="text-gray-700 mb-4">
+						Free forever for open source and personal use.
+					</p>
+					<ul class="text-left text-gray-600 mb-6">
+						<li>✔ Basic CRUD Endpoints</li>
+						<li>✔ Public Content Access</li>
+						<li>✖ No Custom Routes</li>
+						<li>✖ No Email Support</li>
+					</ul>
+					<span class="text-2xl font-bold">Free</span>
+				</div>
+
+				<!-- Paid Tier -->
+				<div class="bg-white p-8 rounded-lg shadow border-2 border-blue-500">
+					<h3 class="text-xl font-semibold mb-2">Pro Tier</h3>
+					<p class="text-gray-700 mb-4">
+						For commercial projects and advanced use.
+					</p>
+					<ul class="text-left text-gray-600 mb-6">
+						<li>✔ All Community Features</li>
+						<li>✔ Custom Routes</li>
+						<li>✔ JWT + OAuth Support</li>
+						<li>✔ Priority Email Support</li>
+					</ul>
+					<span class="text-2xl font-bold">$29/month</span>
+					<div class="mt-6">
+						<a
+							href="#"
+							class="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+						>Upgrade Now</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA -->
+	<section class="py-16 text-center bg-white">
+		<h2 class="text-2xl font-bold mb-4">
+			Start Building with Joomla REST API Today
+		</h2>
+		<a
+			href="#"
+			class="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+		>
+			Sign Up Free
+		</a>
+	</section>
 </Layout>
