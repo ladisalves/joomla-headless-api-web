@@ -7,108 +7,149 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout>
 	<!-- Hero Section -->
-	<section class="text-center py-20 bg-white shadow-md">
-		<h1 class="text-4xl font-bold mb-4">Joomla REST API</h1>
-		<p class="text-lg text-gray-600 mb-6">
-			Power Joomla as a Headless CMS with our flexible REST API
-		</p>
-		<a
-			href="how-it-works.html"
-			class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-		>
-			Get Started Free
-		</a>
-	</section>
+        <section class="relative overflow-hidden bg-joomla text-white">
+                <div class="mx-auto flex max-w-6xl flex-col items-center gap-6 px-6 py-20 text-center">
+                        <p class="rounded-full border border-white/60 px-4 py-1 text-sm uppercase tracking-[0.3em] text-white/80">
+                                Headless Joomla
+                        </p>
+                        <h1 class="text-4xl font-bold leading-tight sm:text-5xl">
+                                Joomla REST API for Modern Frontends
+                        </h1>
+                        <p class="max-w-2xl text-lg text-white/90">
+                                Launch content-rich websites and apps faster with an API-first toolkit built for Joomla.
+                        </p>
+                        <div class="flex flex-wrap items-center justify-center gap-4">
+                                <a
+                                        href="how-it-works.html"
+                                        class="rounded-full bg-white px-8 py-3 font-semibold text-joomla shadow transition hover:-translate-y-0.5 hover:shadow-lg"
+                                >
+                                        Get Started Free
+                                </a>
+                                <a
+                                        href="#pricing"
+                                        class="rounded-full border border-white/80 px-8 py-3 font-semibold text-white transition hover:bg-white/10"
+                                >
+                                        View Pricing
+                                </a>
+                        </div>
+                </div>
+        </section>
 
-	<!-- Overview -->
-	<section class="max-w-5xl mx-auto py-16 px-4">
-		<h2 class="text-2xl font-semibold mb-4">Why Joomla REST API?</h2>
-		<p class="text-gray-700 text-lg mb-6">
-			Use Joomla as a powerful, secure backend for your modern frontend stack.
-			Whether you’re building SPAs, mobile apps, or JAMstack sites, our API
-			gives you full content control.
-		</p>
-	</section>
+        <!-- Overview -->
+        <section class="bg-white">
+                <div class="mx-auto max-w-5xl space-y-6 px-6 py-16">
+                        <h2 class="text-3xl font-semibold text-joomla">Why teams choose Joomla REST API</h2>
+                        <p class="text-lg text-slate-700">
+                                Pair the CMS you know with the frameworks you love. Our REST endpoints keep your
+                                content flexible, secure, and ready for any experience—web, mobile, or beyond.
+                        </p>
+                        <div class="grid gap-6 md:grid-cols-2">
+                                <div class="rounded-2xl border border-joomla/20 px-6 py-6 shadow-sm">
+                                        <h3 class="text-xl font-semibold text-slate-900">Deploy faster</h3>
+                                        <p class="mt-3 text-slate-600">
+                                                Ship new experiences without rebuilding your CMS. Plug the API into your
+                                                existing stack and keep content editors in Joomla.
+                                        </p>
+                                </div>
+                                <div class="rounded-2xl border border-joomla/20 px-6 py-6 shadow-sm">
+                                        <h3 class="text-xl font-semibold text-slate-900">Scale confidently</h3>
+                                        <p class="mt-3 text-slate-600">
+                                                Hardened authentication, granular permissions, and rate limits let you grow
+                                                without worrying about performance or security.
+                                        </p>
+                                </div>
+                        </div>
+                </div>
+        </section>
 
-	<!-- Features -->
-	<section class="bg-white py-16 px-4">
-		<div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 text-center">
-			<div>
-				<h3 class="text-xl font-bold mb-2">Full CRUD API</h3>
-				<p class="text-gray-600">
-					Access, create, update, and delete Joomla content programmatically.
-				</p>
-			</div>
-			<div>
-				<h3 class="text-xl font-bold mb-2">JWT Authentication</h3>
-				<p class="text-gray-600">
-					Secure endpoints using industry-standard token-based authentication.
-				</p>
-			</div>
-			<div>
-				<h3 class="text-xl font-bold mb-2">Frontend Agnostic</h3>
-				<p class="text-gray-600">
-					Integrates with React, Vue, Angular, or any frontend framework.
-				</p>
-			</div>
-		</div>
-	</section>
+        <!-- Features -->
+        <section class="bg-white">
+                <div class="mx-auto max-w-6xl px-6 py-16">
+                        <h2 class="text-center text-3xl font-semibold text-slate-900">Everything you need to go headless</h2>
+                        <div class="mt-12 grid gap-8 md:grid-cols-3">
+                                <div class="flex flex-col rounded-3xl border-t-4 border-joomla bg-white p-8 shadow-lg">
+                                        <h3 class="text-xl font-bold text-slate-900">Full CRUD API</h3>
+                                        <p class="mt-3 text-slate-600">
+                                                Access, create, update, and delete Joomla content programmatically with
+                                                predictable endpoints.
+                                        </p>
+                                </div>
+                                <div class="flex flex-col rounded-3xl border-t-4 border-joomla bg-white p-8 shadow-lg">
+                                        <h3 class="text-xl font-bold text-slate-900">JWT Authentication</h3>
+                                        <p class="mt-3 text-slate-600">
+                                                Secure every request with token-based workflows and refreshable sessions.
+                                        </p>
+                                </div>
+                                <div class="flex flex-col rounded-3xl border-t-4 border-joomla bg-white p-8 shadow-lg">
+                                        <h3 class="text-xl font-bold text-slate-900">Frontend Agnostic</h3>
+                                        <p class="mt-3 text-slate-600">
+                                                Deliver content to React, Vue, Angular, Astro, or native apps without
+                                                switching platforms.
+                                        </p>
+                                </div>
+                        </div>
+                </div>
+        </section>
 
-	<!-- Pricing -->
-	<section id="pricing" class="py-20 bg-gray-100">
-		<div class="max-w-5xl mx-auto text-center">
-			<h2 class="text-3xl font-bold mb-10">Pricing</h2>
-			<div class="grid md:grid-cols-2 gap-8">
-				<!-- Community Tier -->
-				<div class="bg-white p-8 rounded-lg shadow">
-					<h3 class="text-xl font-semibold mb-2">Community Tier</h3>
-					<p class="text-gray-700 mb-4">
-						Free forever for open source and personal use.
-					</p>
-					<ul class="text-left text-gray-600 mb-6">
-						<li>✔ Basic CRUD Endpoints</li>
-						<li>✔ Public Content Access</li>
-						<li>✖ No Custom Routes</li>
-						<li>✖ No Email Support</li>
-					</ul>
-					<span class="text-2xl font-bold">Free</span>
-				</div>
+        <!-- Pricing -->
+        <section id="pricing" class="bg-joomla/5">
+                <div class="mx-auto max-w-6xl px-6 py-20 text-center">
+                        <h2 class="text-3xl font-bold text-slate-900">Simple pricing for every project</h2>
+                        <p class="mt-4 text-lg text-slate-600">
+                                Start for free, then upgrade when you need more power and dedicated support.
+                        </p>
+                        <div class="mt-12 grid gap-8 md:grid-cols-2">
+                                <!-- Community Tier -->
+                                <div class="flex flex-col rounded-3xl bg-white p-10 shadow-xl">
+                                        <h3 class="text-xl font-semibold text-joomla">Community</h3>
+                                        <p class="mt-3 text-slate-600">Free forever for open source and personal use.</p>
+                                        <ul class="mt-6 space-y-3 text-left text-slate-600">
+                                                <li>✔ Basic CRUD Endpoints</li>
+                                                <li>✔ Public Content Access</li>
+                                                <li>✔ Community Support</li>
+                                        </ul>
+                                        <span class="mt-8 text-3xl font-bold text-slate-900">Free</span>
+                                </div>
 
-				<!-- Paid Tier -->
-				<div class="bg-white p-8 rounded-lg shadow border-2 border-blue-500">
-					<h3 class="text-xl font-semibold mb-2">Pro Tier</h3>
-					<p class="text-gray-700 mb-4">
-						For commercial projects and advanced use.
-					</p>
-					<ul class="text-left text-gray-600 mb-6">
-						<li>✔ All Community Features</li>
-						<li>✔ Custom Routes</li>
-						<li>✔ JWT + OAuth Support</li>
-						<li>✔ Priority Email Support</li>
-					</ul>
-					<span class="text-2xl font-bold">$29/month</span>
-					<div class="mt-6">
-						<a
-							href="#"
-							class="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
-						>Upgrade Now</a
-						>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                                <!-- Paid Tier -->
+                                <div class="flex flex-col rounded-3xl border-4 border-white bg-joomla p-10 text-left text-white shadow-xl">
+                                        <h3 class="text-xl font-semibold">Pro</h3>
+                                        <p class="mt-3 text-white/80">For commercial projects and advanced integrations.</p>
+                                        <ul class="mt-6 space-y-3">
+                                                <li>✔ All Community Features</li>
+                                                <li>✔ Custom Routes &amp; Webhooks</li>
+                                                <li>✔ JWT + OAuth Support</li>
+                                                <li>✔ Priority Email Support</li>
+                                        </ul>
+                                        <span class="mt-8 text-3xl font-bold">$29/month</span>
+                                        <div class="mt-8">
+                                                <a
+                                                        href="#"
+                                                        class="inline-flex items-center justify-center rounded-full bg-white px-8 py-3 font-semibold text-joomla shadow transition hover:-translate-y-0.5 hover:shadow-lg"
+                                                >Upgrade Now</a
+                                                >
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
 
-	<!-- CTA -->
-	<section class="py-16 text-center bg-white">
-		<h2 class="text-2xl font-bold mb-4">
-			Start Building with Joomla REST API Today
-		</h2>
-		<a
-			href="#"
-			class="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-		>
-			Sign Up Free
-		</a>
-	</section>
+        <!-- CTA -->
+        <section class="bg-joomla text-white">
+                <div class="mx-auto flex max-w-4xl flex-col items-center gap-6 px-6 py-16 text-center">
+                        <h2 class="text-3xl font-bold">
+                                Start building with Joomla REST API today
+                        </h2>
+                        <p class="text-lg text-white/90">
+                                Spin up a project in minutes, keep your editors productive, and deliver pixel-perfect
+                                experiences everywhere.
+                        </p>
+                        <a
+                                href="#"
+                                class="rounded-full bg-white px-10 py-3 font-semibold text-joomla shadow transition hover:-translate-y-0.5 hover:shadow-lg"
+                        >
+                                Sign Up Free
+                        </a>
+                </div>
+        </section>
 </Layout>
