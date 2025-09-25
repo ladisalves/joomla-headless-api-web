@@ -7,22 +7,23 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout>
     <!-- Header -->
-    <section class="text-center py-20 bg-white shadow">
-        <h1 class="text-4xl font-bold mb-4">How It Works</h1>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-            Understand the basics of the Joomla REST API and how to start using it
-            in your project.
-        </p>
+    <section class="bg-joomla text-white">
+        <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+            <h1 class="text-4xl font-bold">How it works</h1>
+            <p class="mt-4 text-lg text-white/85">
+                Understand the basics of the Joomla REST API and how to start using it in your project.
+            </p>
+        </div>
     </section>
 
     <!-- Content Section -->
-    <section class="max-w-4xl mx-auto py-16 px-4 space-y-12">
+    <section class="mx-auto max-w-4xl space-y-12 px-6 py-16">
         <!-- Joomla Version -->
         <div>
-            <h2 class="text-2xl font-semibold mb-2">
+            <h2 class="text-2xl font-semibold text-joomla">
                 ✅ Supported Joomla Versions
             </h2>
-            <p class="text-gray-700">
+            <p class="mt-2 text-slate-700">
                 Our API is fully compatible with <strong>Joomla 4.x and 5.x</strong>.
                 Make sure your Joomla installation is up to date for full feature
                 support.
@@ -31,10 +32,10 @@ import Layout from '../layouts/Layout.astro';
 
         <!-- Paid Version Coverage -->
         <div>
-            <h2 class="text-2xl font-semibold mb-2">
+            <h2 class="text-2xl font-semibold text-joomla">
                 💼 What’s Included in the Paid Version
             </h2>
-            <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <ul class="mt-3 list-disc list-inside space-y-2 text-slate-700">
                 <li>Custom route creation</li>
                 <li>JWT and OAuth2 authentication support</li>
                 <li>Advanced query capabilities</li>
@@ -46,12 +47,12 @@ import Layout from '../layouts/Layout.astro';
 
         <!-- Community Version Info -->
         <div>
-            <h2 class="text-2xl font-semibold mb-2">
+            <h2 class="text-2xl font-semibold text-joomla">
                 🌐 Where to Find the Community Version
             </h2>
-            <p class="text-gray-700">
+            <p class="mt-2 text-slate-700">
                 The free and open-source Community Tier is available on our
-                <a href="#" class="text-blue-600 underline hover:text-blue-800"
+                <a href="#" class="font-semibold text-joomla underline underline-offset-4 hover:text-joomla/80"
                 >GitHub repository</a
                 >. It includes essential features and is ideal for testing, learning,
                 or personal projects.
@@ -60,13 +61,18 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <!-- CTA -->
-    <section class="py-16 text-center bg-white">
-        <h2 class="text-2xl font-bold mb-4">Ready to Get Started?</h2>
-        <a
-                href="checkout.html"
-                class="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-        >
-            Try It Free
-        </a>
+    <section class="bg-joomla text-white">
+        <div class="mx-auto flex max-w-3xl flex-col items-center gap-6 px-6 py-16 text-center">
+            <h2 class="text-3xl font-bold">Ready to get started?</h2>
+            <p class="text-lg text-white/85">
+                Spin up your first endpoint with guided docs, SDKs, and a support team that knows Joomla inside out.
+            </p>
+            <a
+                    href="checkout.html"
+                    class="rounded-full bg-white px-10 py-3 font-semibold text-joomla shadow transition hover:-translate-y-0.5 hover:shadow-lg"
+            >
+                Try It Free
+            </a>
+        </div>
     </section>
 </Layout>

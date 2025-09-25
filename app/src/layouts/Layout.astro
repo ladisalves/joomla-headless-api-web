@@ -8,11 +8,15 @@ import "../styles/tailwind.css";
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Joomla REST API - Headless CMS</title>
     </head>
-    <body class="bg-gray-50 text-gray-800">
-        <slot />
-        <!-- Footer -->
-        <footer class="bg-gray-800 text-gray-300 py-8 text-center">
-            <p>&copy; 2025 Joomla REST API. All rights reserved.</p>
-        </footer>
+    <body class="min-h-screen bg-white text-slate-900">
+        <div class="flex min-h-screen flex-col">
+            <slot />
+            <!-- Footer -->
+            <footer class="mt-auto bg-joomla py-8 text-center text-white">
+                <p class="text-sm tracking-wide">
+                    &copy; 2025 Joomla REST API. All rights reserved.
+                </p>
+            </footer>
+        </div>
     </body>
 </html>

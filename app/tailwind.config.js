@@ -5,7 +5,11 @@ export default {
     "./public/**/*.html"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        joomla: "#0060df",
+      },
+    },
   },
   plugins: [],
 }
